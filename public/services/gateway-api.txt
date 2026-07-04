@@ -1,0 +1,29 @@
+﻿# Gateway API
+
+Description: 外部 HTTP 网关服务的职责、入口和文档维护方式。
+URL: http://localhost:4321/services/gateway-api/
+Source: services/gateway-api.md
+
+# Gateway API
+
+`gateway-api` 是 Agent Backend 的外部 HTTP 网关服务，负责暴露用户可访问的 HTTP API 和统一响应结构。
+
+## 服务职责
+
+- 对外暴露 HTTP API。
+- 处理请求参数、鉴权、中间件和统一响应。
+- 调用内部 Kitex 服务，例如 `platform-service`。
+- 保持网关层轻量，不承载 Agent 编排逻辑。
+
+## 本地入口
+
+```bash
+cd /Users/chenyinglin/agent-backend/gateway-api
+make run
+```
+
+健康检查：
+
+```bash
+curl http://127.0.0.1:8080/healthz
+```

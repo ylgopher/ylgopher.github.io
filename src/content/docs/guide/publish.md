@@ -1,0 +1,29 @@
+---
+title: 发布与索引
+description: 说明 Markdown 文档如何发布为站点页面和 LLM 索引。
+---
+
+# 发布与索引
+
+文档源文件放在 `src/content/docs` 目录中。新增 Markdown 文件后，Starlight 会根据路径生成页面。
+
+示例：
+
+| 源文件                                        | 页面路径                     |
+|--------------------------------------------|--------------------------|
+| `src/content/docs/index.md`                | `/`                      |
+| `src/content/docs/guide/quick-start.md`    | `/guide/quick-start/`    |
+| `src/content/docs/services/gateway-api.md` | `/services/gateway-api/` |
+
+构建时会先执行 `npm run gen:index`，生成面向机器读取的入口：
+
+- `llms.txt`：简洁的 LLM 导航入口，只列出文档标题、页面 URL、纯文本 URL 和源文件。
+- `llms-full.txt`：汇总所有 Markdown/MDX 正文，适合一次性输入给 Agent 或 LLM 阅读。
+- `docs-index.json`：结构化文档索引，包含标题、描述、页面 URL、纯文本 URL 和源文件路径。
+- `*.txt`：每篇文档对应的纯文本版本，例如 `/services/platform-service.txt` 对应 `/services/platform-service/`。
+
+如果后续要部署到 `/docs` 子路径，可以设置：
+
+```bash
+DOCS_BASE_PATH=/docs SITE_URL=https://example.com npm run build
+```

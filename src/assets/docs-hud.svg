@@ -1,0 +1,71 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GoAgent Lab documentation interface</title>
+  <desc id="desc">A graphite glass documentation interface with navigation, content panels, and calm index signals.</desc>
+  <defs>
+    <linearGradient id="glassFrame" x1="96" y1="78" x2="846" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#32363F" stop-opacity="0.96"/>
+      <stop offset="0.52" stop-color="#24252B" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#1B1B1F" stop-opacity="0.94"/>
+    </linearGradient>
+    <linearGradient id="glassPanel" x1="160" y1="226" x2="812" y2="536" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F7FF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#DDEBFA" stop-opacity="0.86"/>
+    </linearGradient>
+    <linearGradient id="sidePanel" x1="130" y1="232" x2="328" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F1FB" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#C9D8EA" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="terminalGlow" x1="138" y1="118" x2="824" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8B1FF" stop-opacity="0.24"/>
+      <stop offset="0.52" stop-color="#3DD68C" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#EEF0FF" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="168" y1="472" x2="792" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8B1FF"/>
+      <stop offset="0.5" stop-color="#3DD68C"/>
+      <stop offset="1" stop-color="#C8ABFA"/>
+    </linearGradient>
+    <filter id="softShadow" x="40" y="36" width="880" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#111827" flood-opacity="0.24"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#A8B1FF" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect x="88" y="76" width="784" height="568" rx="30" fill="url(#glassFrame)" stroke="#A8B1FF" stroke-opacity="0.28" stroke-width="2"/>
+    <rect x="104" y="92" width="752" height="536" rx="24" fill="url(#terminalGlow)" opacity="0.5"/>
+    <path d="M128 132H832M128 204H832M128 276H832M128 348H832M128 420H832M128 492H832M128 564H832M184 104V616M256 104V616M328 104V616M400 104V616M472 104V616M544 104V616M616 104V616M688 104V616M760 104V616" stroke="#E2E8F0" stroke-width="1" opacity="0.12"/>
+
+    <rect x="130" y="120" width="700" height="72" rx="18" fill="#EEF6FF" fill-opacity="0.86" stroke="#B9D5EE" stroke-opacity="0.7"/>
+    <circle cx="166" cy="156" r="8" fill="#A8B1FF"/>
+    <circle cx="194" cy="156" r="8" fill="#3DD68C"/>
+    <circle cx="222" cy="156" r="8" fill="#D4B8B6"/>
+    <rect x="572" y="145" width="188" height="18" rx="9" fill="#C8D5E6" fill-opacity="0.74"/>
+
+    <rect x="130" y="232" width="198" height="290" rx="20" fill="url(#sidePanel)" stroke="#B9D5EE" stroke-opacity="0.62"/>
+    <rect x="366" y="232" width="464" height="290" rx="20" fill="url(#glassPanel)" stroke="#B9D5EE" stroke-opacity="0.62"/>
+
+    <rect x="164" y="270" width="116" height="16" rx="8" fill="#30A46C"/>
+    <rect x="164" y="316" width="98" height="12" rx="6" fill="#8DA0B8"/>
+    <rect x="164" y="352" width="128" height="12" rx="6" fill="#8DA0B8"/>
+    <rect x="164" y="388" width="84" height="12" rx="6" fill="#8DA0B8"/>
+    <rect x="164" y="424" width="118" height="12" rx="6" fill="#8DA0B8"/>
+    <rect x="164" y="460" width="94" height="12" rx="6" fill="#8DA0B8"/>
+
+    <rect x="408" y="274" width="182" height="20" rx="10" fill="#A8B1FF"/>
+    <rect x="408" y="326" width="326" height="14" rx="7" fill="#7689A3"/>
+    <rect x="408" y="362" width="392" height="14" rx="7" fill="#A8B7CA"/>
+    <rect x="408" y="398" width="274" height="14" rx="7" fill="#A8B7CA"/>
+
+    <rect x="408" y="456" width="156" height="44" rx="12" fill="#E7EDFF" fill-opacity="0.86" stroke="#A8B1FF"/>
+    <rect x="590" y="456" width="156" height="44" rx="12" fill="#E8F7EF" fill-opacity="0.86" stroke="#30A46C"/>
+    <path d="M434 478H528" stroke="#5C73E7" stroke-width="9" stroke-linecap="round"/>
+    <path d="M616 478H710" stroke="#18794E" stroke-width="9" stroke-linecap="round"/>
+
+    <path d="M170 574H310L360 612H514L560 574H792" stroke="url(#accentLine)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="170" cy="574" r="10" fill="#A8B1FF"/>
+    <circle cx="514" cy="612" r="10" fill="#3DD68C"/>
+    <circle cx="792" cy="574" r="10" fill="#C8ABFA"/>
+    <path d="M130 594H830" stroke="#A8B1FF" stroke-width="2" stroke-dasharray="10 14" opacity="0.46"/>
+  </g>
+</svg>
