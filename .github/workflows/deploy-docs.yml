@@ -29,7 +29,7 @@ jobs:
           node-version: 24
         env:
           SITE_URL: https://ylgopher.github.io
-          DOCS_BASE_PATH: /
+          DOCS_BASE_PATH: /dist
 
   deploy:
     needs: build
