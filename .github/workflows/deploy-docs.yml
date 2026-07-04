@@ -27,7 +27,7 @@ jobs:
           path: .
           node-version: 24
         env:
-          SITE_URL: https://ylgopher.github.io
+          SITE_URL: https://www.ylgopher.icu
           DOCS_BASE_PATH: /
 
   deploy:
