@@ -25,7 +25,7 @@ jobs:
       - name: Build Astro docs
         uses: withastro/action@v6
         with:
-          path: docs-center
+          path: .
           node-version: 24
         env:
           SITE_URL: https://ylgopher.github.io
